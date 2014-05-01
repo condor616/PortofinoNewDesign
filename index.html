@@ -14,38 +14,95 @@
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/responsive-dw.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/flexslider/flexslider.css" type="text/css">
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <![endif]-->
 <script src="js/respond.min.js"></script>
+<script src="js/flexslider/jquery.flexslider.js"></script>
+
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+	 
+	//Set the initial counter to 0
+	var numberOfSlides = $('div.flexslider ul.slides li').size()-1;
+	var slide = 0; 
+	  
+    $('.flexslider').flexslider({
+		controlNav: false,               
+		directionNav: false,
+		animationLoop: true,	
+		start: function(){
+			var initialMessage = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq(0) span').html();
+			$('header div.slideinfo span').html(initialMessage);
+		},
+		before: function(){
+			if (slide == numberOfSlides){
+				slide = 0;
+			}
+			else{
+				slide++;
+			}
+		},
+		after: function(){
+			var message = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq('+slide+') span').html();
+			$('header div.slideinfo span').html(message);
+		}
+	});
+  });
+</script>
+
+
+<style>
+.flexslider{
+	border: 0px solid #FFFFFF !important;
+}
+</style>
+
+
 </head>
 <body>
-<div id="container" class="gridContainer clearfix"> 
-
-	<div id="top-page">
-        <div id="logo">
-            <a href="index.html"><img src="images/logo.png" /></a>
-        </div>
-        
-        <nav>
-            <ul>
-                <li class="first"><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li class="last"><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-	</div>    
-    
-    <header>	
+<div id="container" class="gridContainer clearfix">
+  <div id="top-page">
+    <div id="logo"> <a href="index.html"><img src="images/logo2.png" /></a> </div>
+    <nav>
+      <ul>
+        <li class="first"><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li class="last"><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+  <header> 
     <!-- Here we'll place the slider -->
-    </header>
+    <div class="flexslider">
+      <ul class="slides">
+        <li> 
+        	<img src="images/flexslider/1.jpg" /> 
+            <span>Grigliata Mista (38.-)</span>
+        </li>
+        <li>
+        	<img src="images/flexslider/2.jpg" /> 
+            <span>Antipasto all'Italiana (15.-)</span>
+        </li>
+        <li> 
+        	<img src="images/flexslider/3.jpg" /> 
+            <span>Pizza Margherita (18.-)</span>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="slideinfo">
+    	<span></span>
+    </div>
+  </header>
+  <div id="main-content-area"> 
     
-    <div id="main-content-area">
     
-    	<!--
         <div>	
         	<ul class="meals">
                 <li>
@@ -63,19 +120,20 @@
                 	<img src="images/carne.png" />
                 	<p class="learn-more">Learn more</p>
                 </li>
-                <li>
+                <li class="last">
                 	<h2>Antipasto Italiano</h2>
                 	<img src="images/formaggi.png" />
                     <p class="learn-more">Learn more</p>
                 </li>
             </ul>
         </div>
-        -->
-    	
+        
     
-    </div>
-
-
+  </div>
+  
+  <footer>
+  
+  </footer>
 </div>
 </body>
 </html>

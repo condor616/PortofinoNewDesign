@@ -7,6 +7,7 @@ body{
 	background-color: #cfcfcf;
 	font-size: 0.75em;
 	margin:0 auto;
+	background-image: url("../images/background.jpg");
 }
 
 a, a:visited, a:hover, a:active {
@@ -15,25 +16,25 @@ a, a:visited, a:hover, a:active {
 }
 
 #container{
-	width: 90%;
-	margin: auto;
-    height: auto;
+	width: 100%;
+	height: auto;
     margin: 0 auto;
 }
 
 #top-page{
 	background-color: #FFFFFF;
 	border-top: 3px solid #3f3f3f;
-	width: 68.35%;
+	/*width: 68.35%;*/
+	width: 100%;
 	height:100px;
 }
 
 #logo{
-	width: 28%; /* 165/1024 */
+	width: 21%; /* 165/1024 */
 	float:left;
 	height:100px;
 	top:8px;
-	padding: 6px 0 0 10px;
+	padding: 7px 0 0 60px;
 }
 
 nav{
@@ -57,6 +58,10 @@ nav ul li{
 	border-right:solid 1px #cecece;
 }
 
+header{
+	/*width: 68.35%;*/
+	width: 100%;
+}
 
 
 nav ul li.first{
@@ -70,7 +75,7 @@ nav ul li.last{
 
 nav ul li a{
 	background-image: none;
-	overflow:hidden
+	overflow:hidden;
 	color: #4E2E2E;
 	display:block;
 	padding:43px 0;
@@ -83,4 +88,66 @@ nav ul li a:hover {
 	color: #FFF;
 	color: #FFF;
 	cursor:pointer;
+}
+
+.slideinfo{
+	background-color: #333333; 
+	border-radius: 5px;
+ 	overflow:hidden;
+	position:relative;
+	display:block;
+	height:40px;
+	max-height: 45px;
+	top: -53px;
+}
+
+header div.slideinfo span{
+	color: #FFF;
+	display:block;
+	padding: 12px 0 12px 25px;
+	font-size: 1.25em;
+}
+
+
+
+header div.flexslider ul.slides li span{
+	display: none;
+}
+
+
+#main-content-area div ul.meals li{
+	float: left;
+	margin-right: 9%;
+	margin-bottom: 60px;
+}
+
+#main-content-area div ul.meals li.last{
+	margin-right: 0;
+}
+
+#main-content-area div ul.meals{
+	height: 150px;
+	padding-left: 7%;
+}
+
+#main-content-area div ul.meals li h2{
+	font-size: 1.45em;
+	margin-bottom: 20px;
+	color: #682e2e;
+}
+
+#main-content-area div ul.meals li p.learn-more{
+	margin-top: 15px;
+	text-align: center;
+	color: #ec5054;
+	font-weight:bolder;
+	font-size: 1.15em;
+}
+
+
+
+
+footer{
+	margin-top: 50px;
+	height: 150px;
 }
