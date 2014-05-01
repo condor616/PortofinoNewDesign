@@ -30,6 +30,7 @@
 	var slide = 0; 
 	  
     $('.flexslider').flexslider({
+		itemMargin: 0,
 		controlNav: false,               
 		directionNav: false,
 		animationLoop: true,	
@@ -49,6 +50,7 @@
 			var message = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq('+slide+') span').html();
 			$('header div.slideinfo span').html(message);
 		}
+		
 	});
   });
 </script>

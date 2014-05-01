@@ -19,6 +19,7 @@ a, a:visited, a:hover, a:active {
 	width: 100%;
 	height: auto;
     margin: 0 auto;
+	overflow:hidden;
 }
 
 #top-page{
@@ -90,6 +91,10 @@ nav ul li a:hover {
 	cursor:pointer;
 }
 
+.flexslider .slides{
+	clear: both;
+}
+
 .slideinfo{
 	background-color: #333333; 
 	border-radius: 5px;
@@ -143,7 +148,6 @@ header div.flexslider ul.slides li span{
 	font-weight:bolder;
 	font-size: 1.15em;
 }
-
 
 
 
