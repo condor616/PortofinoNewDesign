@@ -34,7 +34,6 @@ a, a:visited, a:hover, a:active {
 #logo{
 	width: 21%; /* 165/1024 */
 	float:left;
-	height:100px;
 	top:8px;
 	padding: 7px 0 0 60px;
 }
