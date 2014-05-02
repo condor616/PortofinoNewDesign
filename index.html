@@ -45,10 +45,16 @@
 			else{
 				slide++;
 			}
+			$('header div.slideinfo span').fadeToggle("slow", function(){
+				$('header div.slideinfo span').html("");
+			});
 		},
 		after: function(){
 			var message = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq('+slide+') span').html();
-			$('header div.slideinfo span').html(message);
+						
+			$('header div.slideinfo span').html(message).fadeToggle(1000);
+
+			
 		}
 		
 	});

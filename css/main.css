@@ -20,6 +20,7 @@ a, a:visited, a:hover, a:active {
 	height: auto;
     margin: 0 auto;
 	overflow:hidden;
+	max-width: 1200px;
 }
 
 #top-page{
@@ -124,6 +125,7 @@ header div.flexslider ul.slides li span{
 	float: left;
 	margin-right: 9%;
 	margin-bottom: 60px;
+	width: 16%;
 }
 
 #main-content-area div ul.meals li.last{
@@ -139,6 +141,9 @@ header div.flexslider ul.slides li span{
 	font-size: 1.45em;
 	margin-bottom: 20px;
 	color: #682e2e;
+	width: 130%;
+	max-height:40px;
+	overflow:hidden;
 }
 
 #main-content-area div ul.meals li p.learn-more{
@@ -146,7 +151,7 @@ header div.flexslider ul.slides li span{
 	text-align: center;
 	color: #ec5054;
 	font-weight:bolder;
-	font-size: 1.15em;
+	font-size: 100%;
 }
 
 
