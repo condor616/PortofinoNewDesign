@@ -16,6 +16,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #container{
+	border-top: 2px solid;
 	width: 100%;
 	height: auto;
     margin: 0 auto;
@@ -32,7 +33,6 @@ a, a:visited, a:hover, a:active {
 }
 
 #logo{
-	border-top: 2px solid;
 	width: 25%; /* 165/1024 */
 	float:left;
 	display:inline-block;
@@ -46,7 +46,6 @@ a, a:visited, a:hover, a:active {
 
 
 nav{
-	border-top: 2px solid;
 	width: 70%;	/*535/1024*/
 	float:right;
 	position:relative;
@@ -68,6 +67,10 @@ nav ul li{
 	width: 16%;
 	border-right:solid 1px #cecece;
 }
+
+nav a#mobile-nav {
+    display: none;
+}  
 
 header{
 	/*width: 68.35%;*/
@@ -92,6 +95,7 @@ nav ul li a{
 	padding:43px 0;
 	text-align: center;
 	text-decoration:none;
+	width: 102%;
 }
 
 nav ul li a:hover {
@@ -172,4 +176,93 @@ header div.flexslider ul.slides li span{
 footer{
 	margin-top: 50px;
 	height: 150px;
+}
+
+
+
+/* Media queries for Mobile*/
+@media screen and (max-width: 480px){
+	
+	header div.slideinfo span {
+    	font-size: 1em;
+    	padding: 4% 0 1% 5%;
+	}
+	
+	
+	#top-page {
+    	border-bottom: none;
+	}
+	
+	#logo {
+		float:none;		
+		width: 60%;
+	}
+	
+	nav{
+		width: 100%;
+		float:none;
+		margin: 5% 0;
+		height: auto;
+	}
+	
+	nav ul {
+        display: none;
+        height: auto;
+    }  
+	
+	nav ul li {
+        width: 100%;
+        float: none;
+        position: relative;
+        border-bottom: 1px solid #262626;
+		border-right: none;
+    }
+	
+	nav ul li.first{
+		border-left: none;	
+	}
+	
+	nav ul li.first a{
+		color: #FFFFFF;
+	}
+	
+	nav ul li.last{
+		width: 100%;
+	}
+	
+	nav ul li a{
+		color: #FFFFFF;
+		padding: 15px 0;
+		text-align: left;;
+	}
+	
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #2e2e2e;          
+    }      
+    
+	nav a:hover {
+         background:#444;
+      }
+	
+	nav a#mobile-nav {
+        display: block;
+        width: 100%;
+        position: relative;
+		color: #FFFFFF;
+		height: 25px;
+		padding-top: 10px;
+    }
+    nav a#mobile-nav:after {
+        content:"";
+        background: url(../images/mob-nav.png) no-repeat;
+        height: 30px;
+        color: #FFF;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 7px;
+    }
 }
