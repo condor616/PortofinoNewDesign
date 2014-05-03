@@ -25,24 +25,34 @@ a, a:visited, a:hover, a:active {
 
 #top-page{
 	background-color: #FFFFFF;
-	border-top: 3px solid #3f3f3f;
-	/*width: 68.35%;*/
+	border-bottom: 3px solid #3f3f3f;
 	width: 100%;
-	height:100px;
+	height:auto;
+	overflow:hidden;
 }
 
 #logo{
-	width: 21%; /* 165/1024 */
+	border-top: 2px solid;
+	width: 25%; /* 165/1024 */
 	float:left;
+	display:inline-block;
 	top:8px;
 	padding: 7px 0 0 60px;
 }
 
+#logo a{
+	display:block;
+}
+
+
 nav{
+	border-top: 2px solid;
 	width: 70%;	/*535/1024*/
 	float:right;
 	position:relative;
 	height:100px;
+	display:inline-block;
+
 }
 
 nav ul{
@@ -51,10 +61,10 @@ nav ul{
 }
 
 nav ul li{
-	height: 100px;
+	/*height: 100px;*/
     float: left;
-	position:relative;
-	text-align:center;
+	/*position:relative;*/
+	/*text-align:center;*/
 	width: 16%;
 	border-right:solid 1px #cecece;
 }
@@ -89,6 +99,10 @@ nav ul li a:hover {
 	color: #FFF;
 	color: #FFF;
 	cursor:pointer;
+}
+
+.flexslider{
+	overflow:auto;
 }
 
 .flexslider .slides{
