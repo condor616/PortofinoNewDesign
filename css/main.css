@@ -262,7 +262,8 @@ footer{
         color: #FFF;
         display: inline-block;
         position: absolute;
-        right: 15px;
+        left: 84%;
         top: 7px;
+		width: 100%
     }
 }
