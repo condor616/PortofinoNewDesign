@@ -178,10 +178,10 @@ header div.flexslider ul.slides li span{
 	font-size: 100%;
 }
 */
-
-#main-content-area > div {
+#container div#main-content-area {
     display: block;
-    height: auto;
+    overflow: auto;
+    position: relative;
 }
 
 #main-content-area div ul.meals-col1{
@@ -350,6 +350,11 @@ footer{
 	
 	#main-content-area div ul h2{
 		min-height: 44px;
+	}
+	
+	#container div#main-content-area{
+		margin: 0 6%;
+		width:100%
 	}
 	
 	
