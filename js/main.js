@@ -1,5 +1,5 @@
 $(function() {
-        var pull = $('#mobile-nav');
+        var pull = $('a#mobile-nav');
         menu = $('nav ul');
 		
         $(pull).on('click', function(e) {
@@ -23,4 +23,24 @@ $(function() {
 		
         $('.panel').height($(window).height());
         
+});
+
+
+
+
+$("document").ready(function($){
+	
+	var nav = $('nav');
+	
+	$(window).scroll(function (){
+	
+		if ($(this).scrollTop() > 136){
+			nav.addClass('fixed');
+		}
+		else{
+			nav.removeClass('fixed');
+		}
+	
+	});
+	
 });
