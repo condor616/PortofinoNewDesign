@@ -33,12 +33,15 @@ $("document").ready(function($){
 	var nav = $('nav');
 	
 	$(window).scroll(function (){
+		
+		if ($(window).width() < 481){
 	
-		if ($(this).scrollTop() > 136){
-			nav.addClass('fixed');
-		}
-		else{
-			nav.removeClass('fixed');
+			if ($(this).scrollTop() > 136){
+				nav.addClass('fixed');
+			}
+			else{
+				nav.removeClass('fixed');
+			}
 		}
 	
 	});
