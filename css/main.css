@@ -365,7 +365,7 @@ footer{
 
 
 /* Media queries for tablet*/
-@media screen and (min-width: 481px) and (max-width: 840px){
+@media screen and (min-width: 480px) and (max-width: 840px){
 	
 	#logo{
 		width: 50%;		
