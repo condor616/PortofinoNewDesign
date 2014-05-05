@@ -34,7 +34,7 @@ $("document").ready(function($){
 	
 	$(window).scroll(function (){
 		
-		if ($(window).width() < 481){
+		if ($(window).width() < 463){
 	
 			if ($(this).scrollTop() > 136){
 				nav.addClass('fixed');
