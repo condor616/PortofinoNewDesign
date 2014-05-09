@@ -28,37 +28,12 @@
   $(window).load(function() {
 	 
 	//Set the initial counter to 0
-	var numberOfSlides = $('div.flexslider ul.slides li').size()-1;
-	var slide = 0; 
 	  
     $('.flexslider').flexslider({
 		itemMargin: 0,
 		controlNav: false,               
 		directionNav: false,
-		animationLoop: true,	
-		start: function(){
-			var initialMessage = $('.flexslider ul.slides li:eq(0) span').html();
-			$('header div.slideinfo span').html(initialMessage);
-		},
-		before: function(){
-			if (slide == numberOfSlides){
-				slide = 0;
-			}
-			else{
-				slide++;
-			}
-			$('header div.slideinfo span').fadeToggle("slow", function(){
-				$('header div.slideinfo span').html("");
-			});
-		},
-		after: function(){
-			var message = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq('+slide+') span').html();
-						
-			$('header div.slideinfo span').html(message).fadeToggle(1000);
-
-			
-		}
-		
+		animationLoop: true
 	});
   });
 </script>
@@ -108,7 +83,7 @@
       
     </div>
     <div class="slideinfo">
-    	<span></span>
+    	<span><a href="#">Menu del giorno >></a></span>
     </div>
   </header>
   <div id="main-content-area"> 

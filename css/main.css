@@ -131,6 +131,10 @@ nav ul li a:hover {
 	/*top: -53px;*/
 }
 
+div.slideinfo span a{
+		color: #FFF;
+	}
+
 header div.slideinfo span{
 	color: #FFF;
 	display:block;
@@ -249,6 +253,8 @@ footer{
 		display:block;
 		max-height: 25px;
 	}
+	
+	
 	
 	header div.slideinfo span {
     	font-size: 1em;
