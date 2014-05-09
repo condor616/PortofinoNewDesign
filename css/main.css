@@ -145,6 +145,11 @@ header div.flexslider ul.slides li span{
 }
 
 
+#main-content-area div.columns{
+	margin-top: 5%;
+}
+
+
 #main-content-area div ul.meals li{
 	float: left;
 	margin-right: 9%;
@@ -331,9 +336,9 @@ footer{
         width: 100%;
         position: relative;
 		color: #FFFFFF;
-		height: 25px;
-		padding-top: 10px;
+		height: 35px;
     }
+	
     nav a#mobile-nav:after {
         content:"";
         background: url(../images/mob-nav.png) no-repeat;
@@ -345,6 +350,12 @@ footer{
         top: 7px;
 		width: 100%
     }
+	
+	#mobile-nav span {
+    	display: block;
+    	position: absolute;
+    	top: 9px;
+	}
 	
 	#main-content-area div ul.meals-col1{
 		width:100%;
