@@ -17,7 +17,7 @@ a, a:visited, a:hover, a:active {
 
 #container{
 	border-top: 2px solid;
-	width: 100%;
+	width: 98%;
 	height: auto;
     margin: 0 auto;
 	overflow:hidden;
@@ -52,7 +52,7 @@ a, a:visited, a:hover, a:active {
 
 
 nav{
-	width: 70%;	/*535/1024*/
+	width: 71.5%;	/*535/1024*/
 	float:right;
 	position:relative;
 	height:100px;
@@ -90,7 +90,7 @@ nav ul li.first{
 
 nav ul li.last{
 	border-right:none;
-	width: 18.99%;
+	width: 18.9%;
 }
 
 nav ul li a{
@@ -193,8 +193,8 @@ header div.flexslider ul.slides li span{
 	font-size: 1.45em;
 	margin-bottom: 20px;
 	color: #682e2e;
-	width: 130%;
-	max-height:40px;
+	width: 100%;
+	height:40px;
 	overflow:hidden;
 }
 
@@ -256,9 +256,16 @@ footer{
 	}
 	
 	#logo {
+		/*
 		float:none;		
 		width: 80%;
 		padding: 3.5% 0% 0% 8.5%;
+		*/
+		display: block;
+    	float: none;
+    	margin: 0 auto;
+    	position: relative;
+    	width: 80%;
 	}
 	
 	#logo img{
@@ -280,13 +287,19 @@ footer{
     }  
 	
 	nav ul li {
-        width: 49%;
-        float: none;
-        position: relative;
-        border-bottom: none;
-		border-right: none;
-		display:inline-block;
-    }
+    	border-bottom: 1px solid #FFFFFF;
+    	border-right: none;
+		border-left:none;
+    	display: block;
+    	float: none;
+    	position: relative;
+    	width: 100%;
+	}
+	
+	nav ul li.last {
+    	width: 100%;
+	}
+	
 	
 	nav ul li.first{
 		border-left: none;	
@@ -294,10 +307,6 @@ footer{
 	
 	nav ul li.first a{
 		color: #FFFFFF;
-	}
-	
-	nav ul li.last{
-		width: 49%;
 	}
 	
 	nav ul li a{
@@ -338,7 +347,6 @@ footer{
     }
 	
 	#main-content-area div ul.meals-col1{
-		display: block;
 		width:100%;
 		padding: 0;
 	}
@@ -348,7 +356,6 @@ footer{
 	}
 	
 	#main-content-area div ul.meals-col2{
-		display: block;
 		width:100%;
 		padding: 0;
 	}
@@ -365,14 +372,17 @@ footer{
 
 
 /* Media queries for tablet*/
-@media screen and (min-width: 481px) and (max-width: 840px){
+@media screen and (min-width: 481px) and (max-width: 769px){
+	
+	#container{
+		width: 98%;
+	}
 	
 	#logo{
-		width: 50%;		
+		width: 49%;		
 		display:block;
 		float: none;
-		margin-left:auto;
-		margin-right: auto;
+		margin: 0 auto;
 		padding: 0;
 	}
 	
@@ -388,29 +398,9 @@ footer{
 		float:none;
 	}
 	
-	nav ul li.last {
-    	border-right: medium none;
-    	width: 17.99%;
+	nav ul li.first {
+    	border-left: none;
 	}
+	
 
-}
-
-@media screen and (max-width: 316px){
-	
-	
-	nav ul li {
-    	border-bottom: 1px solid #FFFFFF;
-    	border-right: none;
-		border-left:none;
-    	display: block;
-    	float: none;
-    	position: relative;
-    	width: 100%;
-	}
-	
-	nav ul li.last {
-    	width: 100%;
-	}
-	
-	
 }

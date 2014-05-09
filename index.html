@@ -36,7 +36,7 @@
 		directionNav: false,
 		animationLoop: true,	
 		start: function(){
-			var initialMessage = $('html body div#container.gridContainer header div.flexslider ul.slides li:eq(0) span').html();
+			var initialMessage = $('.flexslider ul.slides li:eq(0) span').html();
 			$('header div.slideinfo span').html(initialMessage);
 		},
 		before: function(){
