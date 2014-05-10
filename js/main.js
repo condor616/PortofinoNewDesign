@@ -28,22 +28,8 @@ $(function() {
 });
 
 
-$(document).ready(function() {
-  var navpos = $('#mobile-nav').offset();
-  console.log(navpos.top);
-    $(window).bind('scroll', function() {
-      if ($(window).scrollTop() > navpos.top) {
-        $('nav').addClass('fixed');
-       }
-       else {
-         $('nav').removeClass('fixed');
-       }
-    });
-});
 
 
-
-/*
 $("document").ready(function($){
 	
 	var nav = $('nav');
@@ -62,4 +48,4 @@ $("document").ready(function($){
 	
 	});
 	
-});*/
+});

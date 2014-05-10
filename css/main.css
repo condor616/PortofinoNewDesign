@@ -247,13 +247,19 @@ footer{
 	
 	
 	.slideinfo{
+		/*
 		background-color: #333333; 
 		border-radius: 5px;
 		overflow:hidden;
 		display:block;
 		max-height: 25px;
+		*/
+		display:none;
 	}
 	
+	.flexslider{
+		display: none;
+	}
 	
 	
 	header div.slideinfo span {
@@ -288,7 +294,7 @@ footer{
 	nav{
 		width: 100%;
 		float:none;
-		margin: 3.9% 0;
+		margin: 3.9% 0 0;
 		height: auto;
 	}
 	
