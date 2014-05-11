@@ -219,6 +219,175 @@ header div.flexslider ul.slides li span{
 
 
 
+.summary {
+    background-color: #ec5054;
+    display: block;
+    height: 350px;
+    position: relative;
+    width: 96%;
+	overflow:auto;
+	margin: 5% 2% 0;
+	border-radius: 5px;
+}
+
+.summary ul{
+	overflow: auto;
+	padding: 0;
+	margin-left: 2%;
+    margin-right: 2%;
+	margin-top: 40px;
+}
+
+.summary ul li {
+	float: left;
+	width: 22%;
+	border-right: 1px solid #ee6165;
+	padding: 0 1% 0 2%;
+	height: 250px;
+}
+
+#main-content-area div.summary ul li.first{
+	padding: 0 1% 0 1%;
+}
+
+#main-content-area div.summary ul li.last{
+	padding: 0 1% 0 2%;
+	width: 22%;
+	border-right: none;
+}
+
+#main-content-area div.summary ul li.last h2{
+}
+
+.summary ul li a{
+	color: #FFF;
+	display: block;
+	margin-top: 10%;
+	padding-left: 25%;
+}
+
+#main-content-area div.summary ul li h2{
+	color: #FFF;
+	text-align:center;
+	font-size: 1.75em;
+	height: 35px;
+}
+
+#main-content-area div.summary ul li div.desc{
+	padding: 0;
+	color: #FFF;
+	line-height: 2em;
+	width: 98%;
+	height: 150px;
+}
+
+#main-content-area div.summary ul li.last div.desc p{
+	background-image: url("../images/clock.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-bottom: 1px;
+	background-position: left;
+}
+
+#main-content-area div.summary ul li.last div.desc span{
+	padding-left: 25px;
+	display: block;
+}
+
+#main-content-area div.summary ul li div.desc p.cocktail{
+	background-image: url("../images/cocktail.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-bottom: 1px;
+	background-position: left;
+}
+
+#main-content-area div.summary ul li div.desc p.food{
+	background-image: url("../images/food.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-bottom: 1px;
+	background-position: left;
+}
+
+.second-content{
+    display: block;
+    height: auto;
+    overflow: auto;
+    position: relative;
+    width: 90%;
+	margin: 7% 5% 0;
+}
+
+#main-content-area div.second-content div.first-col{
+	float: left;
+	width: 45%;
+}
+
+#main-content-area div.second-content div.last-col{
+	float: right;
+	width: 45%;
+}
+
+#main-content-area div.second-content div h2{
+	color: #682E2E;
+    font-size: 1.45em;
+    height: 40px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#main-content-area div.second-content div.first-col div.restaurant-info {
+    float: right;
+    width: 45%;
+}
+
+#main-content-area div.second-content div.first-col p.restaurant-title {
+    margin-bottom: 9px;
+}
+
+#main-content-area div.second-content div.first-col p.restaurant-desc {
+    color: #808080;
+}
+
+.clearing{
+	clear: both;
+}
+
+#main-content-area div.second-content div.first-col a {
+    color: #EC5054;
+    font-size: 100%;
+    font-weight: bolder;
+    margin-top: 15px;
+	display:block;
+}
+
+#main-content-area div.second-content div.last-col ul.latest-news{
+	padding: 0;
+}
+
+#main-content-area div.second-content div.last-col ul.latest-news li{
+	background-image: url("../images/pink-circle.png");
+	background-repeat: no-repeat;
+	padding-left: 18%;
+	padding-top: 4%;
+	background-position: left;
+	height: 80px;
+}
+
+#main-content-area div.second-content div.last-col a {
+    color: #EC5054;
+    font-size: 100%;
+    font-weight: bolder;
+    margin-top: 15px;
+	display:block;
+}
+
+#main-content-area div.second-content div.last-col ul.latest-news li p.description{
+color: #808080;
+}
+
 footer{
 	margin-top: 50px;
 	height: 150px;
