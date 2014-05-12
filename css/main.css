@@ -231,7 +231,7 @@ header div.flexslider ul.slides li span{
 }
 
 .summary ul{
-	overflow: auto;
+	overflow: hidden;
 	padding: 0;
 	margin-left: 2%;
     margin-right: 2%;
@@ -243,7 +243,7 @@ header div.flexslider ul.slides li span{
 	width: 22%;
 	border-right: 1px solid #ee6165;
 	padding: 0 1% 0 2%;
-	height: 250px;
+	height: auto;;
 }
 
 #main-content-area div.summary ul li.first{
@@ -262,8 +262,10 @@ header div.flexslider ul.slides li span{
 .summary ul li a{
 	color: #FFF;
 	display: block;
-	margin-top: 10%;
-	padding-left: 25%;
+	/*margin-top: 10%;*/
+	padding-left: 7%;
+	position: absolute;
+	bottom: 8%;
 }
 
 #main-content-area div.summary ul li h2{
@@ -278,7 +280,7 @@ header div.flexslider ul.slides li span{
 	color: #FFF;
 	line-height: 2em;
 	width: 98%;
-	height: 150px;
+	max-height: 180px;
 }
 
 #main-content-area div.summary ul li.last div.desc p{
@@ -292,6 +294,10 @@ header div.flexslider ul.slides li span{
 #main-content-area div.summary ul li.last div.desc span{
 	padding-left: 25px;
 	display: block;
+}
+
+#main-content-area div.summary ul li div.desc p{
+	line-height:2.45em;
 }
 
 #main-content-area div.summary ul li div.desc p.cocktail{
@@ -308,6 +314,7 @@ header div.flexslider ul.slides li span{
 	padding-left: 25px;
 	padding-bottom: 1px;
 	background-position: left;
+
 }
 
 .second-content{
@@ -319,14 +326,23 @@ header div.flexslider ul.slides li span{
 	margin: 7% 5% 0;
 }
 
-#main-content-area div.second-content div.first-col{
+#main-content-area div.second-content div{
 	float: left;
+}
+
+#main-content-area div.second-content div.first-col{
 	width: 45%;
+	margin-left: 2%;
 }
 
 #main-content-area div.second-content div.last-col{
-	float: right;
 	width: 45%;
+	margin-left: 6%;
+}
+
+#main-content-area div.second-content div.first-col img{
+	float: left;
+	margin-right:2%;
 }
 
 #main-content-area div.second-content div h2{
@@ -339,8 +355,9 @@ header div.flexslider ul.slides li span{
 }
 
 #main-content-area div.second-content div.first-col div.restaurant-info {
-    float: right;
-    width: 45%;
+    float: left;
+    width: 45%;	
+
 }
 
 #main-content-area div.second-content div.first-col p.restaurant-title {
@@ -569,7 +586,7 @@ footer{
 
 
 /* Media queries for tablet*/
-@media screen and (min-width: 481px) and (max-width: 769px){
+@media screen and (min-width: 481px) and (max-width: 830px){
 	
 	#container{
 		width: 97%;
@@ -600,4 +617,69 @@ footer{
 	}
 	
 
+}
+
+
+/* Styling the second content area when window size is equal to 900px*/
+@media screen and (max-width: 915px){
+	
+	.summary{
+		overflow:visible;
+		height:auto;
+	}
+	
+	.summary ul li{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+		border-right: none;
+		border-bottom: 1px solid #ee6165;
+		border-right: none;
+		padding: 6% 0 6%;
+	}
+	
+	.summary ul li a{
+		display: none;
+	}
+	
+	#main-content-area div.summary ul li.first{
+		padding: 6% 0 6% 0;
+	}
+	
+	#main-content-area div.summary ul li div.desc{
+		overflow: hidden;
+	}
+	
+	#main-content-area div.summary ul li div.desc p.food{
+		float:left;
+		margin-right: 3%;
+	}
+	
+	#main-content-area div.summary ul li div.desc p.cocktail{
+		float:left;
+		margin-right: 8%;
+	}
+	
+	#main-content-area div.summary ul li.last{
+		border-bottom: none;
+		width: 90%;
+		margin: 0 auto;
+		padding: 6% 0 6%;
+	}
+	
+	#main-content-area div.summary ul li.last div.desc span{
+		display: inline;
+	}
+	
+	#main-content-area div.summary ul li.last div.desc{
+		
+	}
+
+}
+
+
+/*the second content areat get styled at the following size*/
+@media screen and (max-width: 915px){
+
+	
 }

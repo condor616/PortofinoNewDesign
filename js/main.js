@@ -19,11 +19,10 @@ $(function() {
             var w = $(window).width();
             if(w < 800 ) {
                 menu.slideToggle();
-				
             }
         });
 		
-        //$('.panel').height($(window).height());
+        $(window).height($('nav ul').height());
         
 });
 
@@ -33,12 +32,22 @@ $(function() {
 $("document").ready(function($){
 	
 	var nav = $('nav');
-
+	
 	if ($(window).width() < 463){
-		nav.addClass('fixed');
+			nav.addClass('fixed');
 	}
-	else{
-		nav.removeClass('fixed');
-	}
+	
+	
+	$(window).resize(function(){
+	
+		if ($(window).width() < 463){
+			nav.addClass('fixed');
+		}
+		else{
+			nav.removeClass('fixed');
+		}
+	});
+	
+
 	
 });
