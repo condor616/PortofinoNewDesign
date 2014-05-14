@@ -283,6 +283,7 @@ header div.flexslider ul.slides li span{
 	line-height: 2em;
 	width: 98%;
 	max-height: 180px;
+	margin: 0 auto;
 }
 
 #main-content-area div.summary ul li.last div.desc p{
@@ -667,15 +668,15 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	}
 	
 	#logo{
-		width: 49%;		
-		display:block;
+		width: 48%;
+		/*display:block;*/
 		float: none;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
 		padding: 0;
 	}
 	
 	#logo a img{
-		min-width:100%;
+		/*min-width:100%;*/
 		max-width: none;
 	}
 	
@@ -709,7 +710,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 		border-right: none;
 		border-bottom: 1px solid #ee6165;
 		border-right: none;
-		padding: 6% 0 6%;
+		padding: 4% 0 4%;
 	}
 	
 	.summary ul li a{
@@ -727,11 +728,13 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	#main-content-area div.summary ul li div.desc p.food{
 		float:left;
 		margin-right: 3%;
+		width: 30%;
 	}
 	
 	#main-content-area div.summary ul li div.desc p.cocktail{
 		float:left;
 		margin-right: 8%;
+		width:30%;ß
 	}
 	
 	#main-content-area div.summary ul li.last{
