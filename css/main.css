@@ -4,10 +4,11 @@ html, body {
 
 body{
 	font-family: Verdana,Arial,Helvetica,sans-serif;
-	background-color: #cfcfcf;
+	/*background-color: #cfcfcf;*/
 	font-size: 0.75em;
 	margin:0 auto;
 	background-image: url("../images/background.jpg");
+	background-repeat: repeat-x;
 }
 
 a, a:visited, a:hover, a:active {
@@ -16,8 +17,8 @@ a, a:visited, a:hover, a:active {
 }
 
 #container{
-	border-top: 2px solid;
-	width: 98%;
+	border-top: 3px solid;
+	width: auto;
 	height: auto;
     margin: 0 auto;
 	overflow:hidden;
@@ -151,6 +152,7 @@ header div.flexslider ul.slides li span{
 
 #main-content-area div.columns{
 	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 
@@ -203,7 +205,7 @@ header div.flexslider ul.slides li span{
 	margin-bottom: 20px;
 	color: #682e2e;
 	width: 100%;
-	height:40px;
+	height:50px;
 	overflow:hidden;
 }
 
@@ -226,7 +228,7 @@ header div.flexslider ul.slides li span{
     position: relative;
     width: 96%;
 	overflow:auto;
-	margin: 5% 2% 0;
+	margin: 0 auto;
 	border-radius: 5px;
 }
 
@@ -387,10 +389,11 @@ header div.flexslider ul.slides li span{
 #main-content-area div.second-content div.last-col ul.latest-news li{
 	background-image: url("../images/pink-circle.png");
 	background-repeat: no-repeat;
-	padding-left: 18%;
-	padding-top: 4%;
+	padding-left: 80px;
 	background-position: left;
-	height: 80px;
+	min-height: 69px;
+	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 #main-content-area div.second-content div.last-col a {
@@ -406,22 +409,29 @@ color: #808080;
 }
 
 footer{
-	margin: 50px 2% 0 2%;
+	margin: 8% 2% 3%;
 	height: 100px;;
 	position: relative;
 	display:block;
-	width: 100%;
+	width: 96%;
 	overflow:hidden;
+	padding: 0 auto;
+	border-bottom: 6px solid #EC5054;
 }
 
 footer div.footer-left{
 	width: 50%;
 	float: left;
+	margin: 0 1% 0 3%;
 }
 
-footer div.footer-right{
-	width: 50%;
-	float: left;
+html body div#container.gridContainer footer div.footer-right{
+	background-image: url("../images/logo2.png");
+	background-position: right;
+	background-repeat:no-repeat;
+	height:90px;
+	width: 250px;
+	float:right;
 }
 
 footer div.footer-left p.footer-disclaimer{
@@ -430,7 +440,9 @@ footer div.footer-left p.footer-disclaimer{
 
 footer div.footer-left ul.social-icons{
 	padding: 0;
-	height: 150px;
+	height: auto;
+	display:block;
+	overflow: hidden;
 }
 
 footer div.footer-left ul.social-icons a{
@@ -439,8 +451,8 @@ footer div.footer-left ul.social-icons a{
 	display:block;
 	height:50px;
 	float: left;
-	width:6%;
-	margin-right: 3%;
+	width:40px;
+	margin-right: 30px;
 }
 
 footer div.footer-left ul.social-icons a.social-rss{
@@ -469,13 +481,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 
 
 
-html body div#container.gridContainer footer div.footer-right{
-	background-image: url("../images/logo2.png");
-	background-position: right;
-	background-repeat:no-repeat;
-	height:90px;
-	width: 45%;
-}
+
 
 
 
@@ -711,7 +717,7 @@ html body div#container.gridContainer footer div.footer-right{
 	}
 	
 	#main-content-area div.summary ul li.first{
-		padding: 6% 0 6% 0;
+		padding: 4% 0 4% 0;
 	}
 	
 	#main-content-area div.summary ul li div.desc{
@@ -732,7 +738,7 @@ html body div#container.gridContainer footer div.footer-right{
 		border-bottom: none;
 		width: 90%;
 		margin: 0 auto;
-		padding: 6% 0 6%;
+		padding: 4% 0 4%;
 	}
 	
 	#main-content-area div.summary ul li.last div.desc span{
