@@ -368,7 +368,7 @@ header div.flexslider ul.slides li span{
 
 #main-content-area div.second-content div.first-col div.restaurant-info {
     float: left;
-    width: 45%;	
+    width: 80%;	
 
 }
 
@@ -502,6 +502,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 @media screen and (max-width: 480px){
 	
 	
+	
 	#container{
 		width: 100%;
 	}
@@ -522,13 +523,6 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	
 	
 	.slideinfo{
-		/*
-		background-color: #333333; 
-		border-radius: 5px;
-		overflow:hidden;
-		display:block;
-		max-height: 25px;
-		*/
 		display:none;
 	}
 	
@@ -548,11 +542,6 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	}
 	
 	#logo {
-		/*
-		float:none;		
-		width: 80%;
-		padding: 3.5% 0% 0% 8.5%;
-		*/
 		display: none;
     	float: none;
     	margin: 0 auto;
@@ -644,6 +633,15 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
     	top: 9px;
 	}
 	
+	#main-content-area div.columns {
+    	margin: 0 auto;
+    	padding-left: 8%;
+    	padding-top: 12%;
+    	width: 96%;
+	}
+	
+	
+	
 	#main-content-area div ul.meals-col1{
 		width:100%;
 		padding: 0;
@@ -663,7 +661,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	}
 	
 	#container div#main-content-area{
-		margin: 6% 6%;
+		margin: 0 auto;
 		width:100%
 	}
 }
@@ -768,9 +766,3 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 
 }
 
-
-/*the second content areat get styled at the following size*/
-@media screen and (max-width: 915px){
-
-	
-}
