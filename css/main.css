@@ -40,20 +40,28 @@ a, a:visited, a:hover, a:active {
 }
 
 #logo{
-	width: 21%; /* 165/1024 */
+	width: 27.5%; 
 	float:left;
 	display:inline-block;
 	top:8px;
-	padding: 0.5% 0% 0% 4.5%;
+	/*padding: 0.5% 0% 0% 4.5%;*/
 }
 
 #logo a{
 	display:block;
 }
 
+#logo a img{
+	margin: 0 auto;
+	display: block;
+	max-width: 96%;
+	padding-top: 8px;
+	
+}
+
 
 nav{
-	width: 71.5%;	/*535/1024*/
+	width: 72.5%;	/*535/1024*/
 	float:right;
 	position:relative;
 	height:100px;
@@ -89,9 +97,10 @@ nav ul li.first{
 	border-left:solid 1px #cecece;
 }
 
+
 nav ul li.last{
 	border-right:none;
-	width: 18.9%;
+	width: 18.8%;
 }
 
 nav ul li a{
@@ -668,15 +677,15 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	}
 	
 	#logo{
-		width: 48%;
-		/*display:block;*/
+		width: auto;
+		display:block;
 		float: none;
-		/*margin: 0 auto;*/
 		padding: 0;
 	}
 	
 	#logo a img{
-		/*min-width:100%;*/
+		margin: 0 auto;
+		display:block;
 		max-width: none;
 	}
 	
@@ -685,10 +694,15 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 		border-top: solid 2px;
 		display: block;
 		float:none;
+		overflow:hidden;
 	}
 	
 	nav ul li.first {
     	border-left: none;
+	}
+	
+	nav ul li.last{
+		width: 18.8%;
 	}
 	
 
