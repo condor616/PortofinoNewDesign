@@ -111,15 +111,24 @@ nav ul li a{
 	padding:43px 0;
 	text-align: center;
 	text-decoration:none;
-	width: 102%;
+	width: 100%;
 }
 
 nav ul li a:hover {
 	background-color: #3f3f3f;
 	color: #FFF;
-	color: #FFF;
 	cursor:pointer;
+	
 }
+
+#top-page nav ul li.active{
+	background-color: #3f3f3f;
+}
+
+#top-page nav ul li.active a{
+	color: #FFF;
+}
+
 
 .flexslider{
 	overflow:auto;
@@ -590,7 +599,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 		color: #FFFFFF;
 	}
 	
-	nav ul li a{
+	nav ul li a, nav ul li a:visited, nav ul li a:hover, nav ul li a:active{
 		color: #FFFFFF;
 		padding: 15px 0;
 		text-align: left;;
