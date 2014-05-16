@@ -354,7 +354,7 @@ header div.flexslider ul.slides li span{
 
 #main-content-area div.second-content div.first-col img{
 	float: left;
-	margin-right:2%;
+	margin-bottom:3%;
 }
 
 #main-content-area div.second-content div h2{
@@ -693,7 +693,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	
 	#main-content-area div.second-content div.first-col div.restaurant-info{
 		width: 90%;
-		margin-left: 10%;
+		margin-left: 0;
 	}
 	
 	#main-content-area div.second-content div.last-col {
@@ -703,7 +703,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	}
 	
 	#main-content-area div.second-content div.last-col ul.latest-news {
-		margin-left: 10%;
+		margin-left: 0;
 		padding: 0;
 	}
 	
