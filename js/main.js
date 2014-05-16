@@ -33,14 +33,14 @@ $("document").ready(function($){
 	
 	var nav = $('nav');
 	
-	if ($(window).width() < 463){
+	if ($(window).width() < 481){
 			nav.addClass('fixed');
 	}
 	
 	
 	$(window).resize(function(){
 	
-		if ($(window).width() < 463){
+		if ($(window).width() < 481){
 			nav.addClass('fixed');
 		}
 		else{
