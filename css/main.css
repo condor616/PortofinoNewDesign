@@ -11,6 +11,13 @@ body{
 	background-repeat: repeat-x;
 }
 
+#main-content-area iframe{
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 3%;
+}
+
 a, a:visited, a:hover, a:active {
     text-decoration: none;
 	color:#4E2E2E;
