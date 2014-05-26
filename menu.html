@@ -20,7 +20,100 @@
 <![endif]-->
 <script src="js/respond.min.js"></script>
 <script src="js/main.js"></script>
+<script>
 
+</script>
+<style>
+#main-content-area div#nav-menu {
+	overflow: auto;
+	position: fixed;
+	width: 15%;
+	float: left;
+	margin-right: 1%;
+}
+#main-content-area div#nav-menu ul {
+	background-color: #EC5054;
+	border-radius: 15px;
+	padding: 2% 0;
+	color: #FFF;
+}
+#main-content-area div#nav-menu ul li {
+	height: 20px;
+	padding: 3%;
+	border-bottom: 1px dotted #FFF;
+	width: 85%;
+	margin: auto;
+}
+#main-content-area div#nav-menu ul li.last {
+	border-bottom: none;
+}
+#main-content-area div#menu-content {
+	width: 80%;
+	height: auto;
+	margin: 1% 0 auto;
+	float: right;
+	width: 77%;
+
+}
+h1 {
+	font-size: 1.75em;
+}
+h2 {
+	border-bottom: 1px solid #000000;
+	font-size: 1.25em;
+	margin-top: 3%;
+	padding-bottom: 1%;
+}
+#main-content-area div#menu-content div.content-left div ul li {
+	line-height: 3em;
+}
+
+#main-content-area div#menu-content div.content-left div ul{
+	overflow: auto;
+}
+
+#main-content-area div#menu-content div.content-left div ul li{
+	overflow: hidden;
+}
+
+#main-content-area div#menu-content div.content-left{
+	float: left;
+	margin-right: 2%;
+	margin-left: 2%;
+	width: 40%;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.title{
+	float: left;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.price{
+	float: right;
+	color: #C8450B;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.desc{
+	color: #999999;
+    float: left;
+    line-height: 1.25em;
+    margin-left: 5%;
+	width:85%;
+}
+
+div.antipasti {
+    margin-bottom: 20%;
+}
+div.primi{
+	margin-bottom: 20%;
+}
+
+a, a:visited, a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+</style>
 </head>
 <body>
 <div id="container" class="gridContainer clearfix">
@@ -37,31 +130,109 @@
       </ul>
       <a href="#" id="mobile-nav"><span>Menu</span></a> </nav>
   </div>
-  <header> 
-    
-  </header>
-  
+  <header> </header>
   <div id="main-content-area">
+    <div id="nav-menu">
+      <ul>
+        <li>Antipasti - Vorspeise</li>
+        <li>Primi piatti "Pasta"</li>
+        <li>Secondi Piatti - Fleisch</li>
+        <li>Dessert</li>
+        <li class="last">Pizze</li>
+      </ul>
+    </div>
+    <div id="menu-content">
+      <h1>Menu</h1>
+      
+      <div class="content-left">
+      
+      <div class="antipasti">
+        <h2>Antipasti - Vorspeise</h2>
+        <ul>
+          <li> 
+          	<span class="title">Insalata Don Pasquale</span>
+            <span class="price">10.-</span> 
+            <span class="desc">geröstete Mortadella auf Rucolabett mit Cherrytomaten Parmesan und Balsamico</span>
+          </li>
+          <li> 
+          	<span class="title">Trittico Marinato</span>
+            <span class="price">19.-</span>
+            <span class="desc">Carpaccio von frischem Lachs, Thunfisch und Schwertfischbr</span>
+          </li>
+          <li> 
+          	<span class="title">Speciale Insalata Portofino</span>
+            <span class="price">22.-</span>
+            <span class="desc">Spargeljulienne mit Nüsslisalat, Birne, Wallnuss und gemischte Italienische Käse</span>
+          </li>
+          <li>
+          	<span class="title">Antipasti di Mare</span>
+            <span class="price">23.-</span>
+            <span class="desc">Tintenfisch, Calamari und Crevetten mit Zitronette</span>
+          </li>
+          <li>
+          	<span class="title">Wurstsalat</span>
+            <span class="price">30.-</span>
+            <span class="desc"></span>
+          </li>
+          <li>
+          	<span class="title">Wurst - Käsesalat garniert</span>
+            <span class="price">18.-</span>
+            <span class="desc"></span>
+          </li>
+        </ul>
+      </div><!-- END Antipasti-->
+      
+      <div class="primi">
+        <h2>Primi piatti "Pasta"</h2>
+        <ul>
+          <li> 
+          	<span class="title">Insalata Don Pasquale</span>
+            <span class="price">10.-</span> 
+            <span class="desc">geröstete Mortadella auf Rucolabett mit Cherrytomaten Parmesan und Balsamico</span>
+          </li>
+          <li> 
+          	<span class="title">Trittico Marinato</span>
+            <span class="price">19.-</span>
+            <span class="desc">Carpaccio von frischem Lachs, Thunfisch und Schwertfischbr</span>
+          </li>
+          <li> 
+          	<span class="title">Speciale Insalata Portofino</span>
+            <span class="price">22.-</span>
+            <span class="desc">Spargeljulienne mit Nüsslisalat, Birne, Wallnuss und gemischte Italienische Käse</span>
+          </li>
+          <li>
+          	<span class="title">Antipasti di Mare</span>
+            <span class="price">23.-</span>
+            <span class="desc">Tintenfisch, Calamari und Crevetten mit Zitronette</span>
+          </li>
+          <li>
+          	<span class="title">Wurstsalat</span>
+            <span class="price">30.-</span>
+            <span class="desc"></span>
+          </li>
+          <li>
+          	<span class="title">Wurst - Käsesalat garniert</span>
+            <span class="price">18.-</span>
+            <span class="desc"></span>
+          </li>
+        </ul>
+      </div><!-- END Primi-->
+      
+      
+      
+    </div>
     
+    </div> <!-- END Content Left-->
     
   </div>
-  
-  
-  <footer> 
-  
-  	<div class="footer-left">
-    	<p class="footer-disclaimer">
-        	Ristorante Portofino - © Copyright 2014
-        </p>
-        <ul class="social-icons">
-        	<a href="#" class="social-rss"></a>
-            <a href="#" class="social-facebook"></a>
-            <a href="#" class="social-twitter"></a>
-        </ul>
+  <footer>
+    <div class="footer-left">
+      <p class="footer-disclaimer"> Ristorante Portofino - © Copyright 2014 </p>
+      <ul class="social-icons">
+        <a href="#" class="social-rss"></a> <a href="#" class="social-facebook"></a> <a href="#" class="social-twitter"></a>
+      </ul>
     </div>
-    <div class="footer-right">
-    </div>
-    
+    <div class="footer-right"> </div>
   </footer>
 </div>
 </body>
