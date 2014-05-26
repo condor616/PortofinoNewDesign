@@ -54,8 +54,15 @@ var Menu = (function() {
 				img = "menu-3d/" + recipe.data( 'thumb' ),
 				description = recipe.parent().next().text(),
 				url = recipe.attr( 'href' );
+				price = recipe.data( 'price' );
+				
+				/*
+				With image
+				var $modal = $( '<div class="rm-modal"><div class="rm-thumb" style="background-image: url(' + img + ')"></div><h5>' + title + '</h5><p>' + description + '</p><span>'+ price +'</span><span class="rm-close-modal">x</span></div>' );
+				*/
 
-			var $modal = $( '<div class="rm-modal"><div class="rm-thumb" style="background-image: url(' + img + ')"></div><h5>' + title + '</h5><p>' + description + '</p><span class="rm-close-modal">x</span></div>' );
+			/*Without image*/
+			var $modal = $( '<div class="rm-modal"><h5>' + title + '</h5><p>' + description + '</p><span>'+ price +'</span><span class="rm-close-modal">x</span></div>' );
 
 			$modal.appendTo( $container );
 

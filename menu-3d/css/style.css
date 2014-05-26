@@ -14,7 +14,7 @@
 
 .rm-container {
 	width: 33%;
-	height: 700px;
+	height: 800px;
 	max-width: 370px;
 	margin: 0 auto 40px auto;
 	position: relative;
@@ -189,7 +189,7 @@ a.rm-button-open,
 }
 
 .rm-content h4:not(:first-child) {
-	margin-top: 35px;
+	margin-top: 25px;
 }
 
 a.rm-button-open {
