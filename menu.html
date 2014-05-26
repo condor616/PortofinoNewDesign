@@ -20,9 +20,7 @@
 <![endif]-->
 <script src="js/respond.min.js"></script>
 <script src="js/main.js"></script>
-<script>
 
-</script>
 <style>
 #main-content-area div#nav-menu {
 	overflow: auto;
@@ -43,6 +41,11 @@
 	border-bottom: 1px dotted #FFF;
 	width: 85%;
 	margin: auto;
+	cursor:pointer;
+	background-image:url(images/arrow.png);
+	background-repeat:no-repeat;
+	background-position:70% center;
+
 }
 #main-content-area div#nav-menu ul li.last {
 	border-bottom: none;
@@ -52,7 +55,7 @@
 	height: auto;
 	margin: 1% 0 auto;
 	float: right;
-	width: 77%;
+	width: 75%;
 
 }
 h1 {
@@ -107,9 +110,10 @@ div.primi{
 	margin-bottom: 20%;
 }
 
-a, a:visited, a:active {
-    color: #FFF;
-    text-decoration: none;
+#main-content-area div#nav-menu ul li:hover{
+	background-image:url(images/arrow.png);
+	background-repeat:no-repeat;
+	background-position:95% center;
 }
 
 
@@ -134,8 +138,8 @@ a, a:visited, a:active {
   <div id="main-content-area">
     <div id="nav-menu">
       <ul>
-        <li>Antipasti - Vorspeise</li>
-        <li>Primi piatti "Pasta"</li>
+        <li class="antipasti">Antipasti - Vorspeisen</li>
+        <li class="primi">Primi piatti "Pasta"</li>
         <li>Secondi Piatti - Fleisch</li>
         <li>Dessert</li>
         <li class="last">Pizze</li>
@@ -235,5 +239,20 @@ a, a:visited, a:active {
     <div class="footer-right"> </div>
   </footer>
 </div>
+<script>
+	$("#nav-menu ul li.antipasti").click(function() {
+		$('html, body').animate({
+			scrollTop: $("div.content-left div.antipasti h2").offset().top
+		}, 1000);
+	});
+	
+	$("#nav-menu ul li.primi").click(function() {
+		$('html, body').animate({
+			scrollTop: $("div.content-left div.primi h2").offset().top
+		}, 1000);
+	});
+	
+	
+</script>
 </body>
 </html>
