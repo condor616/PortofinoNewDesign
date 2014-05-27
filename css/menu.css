@@ -1,0 +1,136 @@
+#main-content-area div#nav-menu {
+	overflow: auto;
+	position: fixed;
+	width: 15%;
+	float: left;
+	margin-right: 1%;
+}
+#main-content-area div#nav-menu ul {
+	background-color: #EC5054;
+	border-radius: 15px;
+	padding: 2% 0;
+	color: #FFF;
+}
+#main-content-area div#nav-menu ul li {
+	height: auto;
+	/*min-height:30px;*/
+	padding: 10% 0;
+	border-bottom: 1px dotted #FFF;
+	width: 85%;
+	margin: auto;
+	cursor:pointer;
+	/*
+	background-image:url(../images/arrow.png);
+	background-repeat:no-repeat;
+	background-position:70% center;
+	*/
+}
+
+#main-content-area div#nav-menu ul li span{
+	display: block;
+	width: 80%;
+}
+
+
+#main-content-area div#nav-menu ul li.last {
+	border-bottom: none;
+}
+#main-content-area div#menu-content {
+	width: 80%;
+	height: auto;
+	margin: 1% 0 auto;
+	float: right;
+	width: 80%;
+
+}
+h1 {
+	font-size: 1.75em;
+}
+h2 {
+	border-bottom: 1px solid #000000;
+	font-size: 1.25em;
+	margin-top: 3%;
+	padding-bottom: 1%;
+}
+#main-content-area div#menu-content div.content-left div ul li {
+	line-height: 3em;
+}
+
+#main-content-area div#menu-content div.content-left div ul{
+	overflow: auto;
+}
+
+#main-content-area div#menu-content div.content-left div ul li{
+	overflow: hidden;
+}
+
+#main-content-area div#menu-content div.content-left{
+	float: left;
+	margin-right: 2%;
+	margin-left: 2%;
+	width: 85%;
+	padding-top: 4%;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.title{
+	float: left;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.price{
+	float: right;
+	color: #C8450B;
+}
+
+#main-content-area div#menu-content div.content-left div ul li span.desc{
+	color: #999999;
+    float: left;
+    line-height: 1.25em;
+    margin-left: 5%;
+	width:85%;
+}
+
+div.antipasti {
+    margin-bottom: 8%;
+}
+div.primi{
+	margin-bottom: 20%;
+}
+
+#main-content-area div#nav-menu ul li:hover{
+	background-image:url(../images/arrow.png);
+	background-repeat:no-repeat;
+	background-position:95% center;
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 830px){
+	#main-content-area div#menu-content div.content-left {
+    	float: left;
+    	margin-left: 2%;
+    	margin-right: 2%;
+    	width: 85%;
+	}
+	
+	#main-content-area div#nav-menu {
+    	float: left;
+    	margin-right: 1%;
+    	overflow: auto;
+    	position: fixed;
+    	width: 23%;
+	}
+	
+	#main-content-area div#menu-content {
+    	float: right;
+    	height: auto;
+    	margin: 1% 0 auto;
+    	width: 70%;
+	}
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 480px){
+
+	
+}
