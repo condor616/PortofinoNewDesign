@@ -24,7 +24,6 @@ a, a:visited, a:hover, a:active {
 }
 
 #container{
-	border-top: 2px solid;
 	width: auto;
 	height: auto;
     margin: 0 auto;
@@ -41,6 +40,7 @@ a, a:visited, a:hover, a:active {
 #top-page{
 	background-color: #FFFFFF;
 	border-bottom: 3px solid #3f3f3f;
+	border-top: 3px solid #3f3f3f;
 	width: 100%;
 	height:auto;
 	overflow:hidden;
@@ -79,6 +79,7 @@ nav{
 nav ul{
 	display: block;
     height: 100px;
+	margin-right: -3px;
 }
 
 nav ul li{
@@ -841,6 +842,10 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 
 /* Styling the second content area when window size is equal to 900px*/
 @media screen and (max-width: 915px){
+	
+	#top-page{
+		border-top: none;
+	}
 	
 	.summary{
 		overflow:visible;

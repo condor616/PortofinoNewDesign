@@ -302,52 +302,29 @@
 
 <script>
 
-	function getPercentage(parent, child){
-		$(parent).hide();
-		var width = $(child).width();
-		$(parent).show();
-		return width;
-		console.log(width);
-	}
-
 	var t = $("#menu-content div.content-left div.antipasti").offset().top;
-	var fullWidth;
-	var content;
-	var nav;
-	//var navWidth = getPercentage('#main-content-area','#nav-menu');
 
+	
 	$(window).scroll(function(){
 		
       if ($(this).scrollTop() > t && $(window).width() > 430) { //only for desktop and tablet. No fixed nav for mobile
 		  $('#nav-menu').addClass('fixed');
-		  
-		  fullWidth = $('#main-content-area').width();
-		  content = $('#menu-content').width();
-		  nav = fullWidth - content;
-		  margin = (fullWidth*2)/100;
-		  
-		  
-		  $('#nav-menu').width(nav-margin +'px');
-		  console.log();
+		 
 		  	
-	  } else {
+	  }
+	  if($(this).scrollTop() < t && $(window).width() > 430) {
           $('#nav-menu').removeClass('fixed');
-		  //if tablet
-		  if ($(window).width() < 830){
-			  $('#nav-menu').width(26+'%');
-		  }
-		  else{
-		  		$('#nav-menu').width(18+'%');
-		  }
-		  //
+		 
       }
   	});
 	
+	
 	$(window).resize(function() {
         t = $("#menu-content div.content-left div.antipasti").offset().top;
-		var navWidth = getPercentage('#main-content-area','#nav-menu');
+		//var navWidth = getPercentage('#main-content-area','#nav-menu');
 
     });
+	
   </script>
 
 </body>
