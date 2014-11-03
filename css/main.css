@@ -47,15 +47,16 @@ a, a:visited, a:hover, a:active {
 }
 
 #logo{
-	width: 27.5%; 
+	width: 25%; 
+	height: auto;
 	float:left;
 	display:inline-block;
 	top:8px;
-	/*padding: 0.5% 0% 0% 4.5%;*/
 }
 
 #logo a{
 	display:block;
+	margin: 0 auto;
 }
 
 #logo a img{
@@ -68,7 +69,7 @@ a, a:visited, a:hover, a:active {
 
 
 nav{
-	width: 72.5%;	/*535/1024*/
+	width: 75%;	/*535/1024*/
 	float:right;
 	position:relative;
 	height:100px;
@@ -108,7 +109,7 @@ nav ul li.first{
 
 nav ul li.last{
 	border-right:none;
-	width: 18.8%;
+	width: 19%;
 }
 
 nav ul li a{
@@ -532,7 +533,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
 	.fixed {
     	position: fixed; 
     	top: 0;
-    	height: 35px; 
+    	height: 45px; 
     	z-index: 100;
 		margin: 0;
 		width: 100%
@@ -629,7 +630,7 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
         width: 100%;
         position: relative;
 		color: #FFFFFF;
-		height: 35px;
+		height: 40px;
     }
 	
     nav a#mobile-nav:after {
@@ -639,15 +640,15 @@ footer div.footer-left ul.social-icons  a.social-twitter:hover{
         color: #FFF;
         display: inline-block;
         position: absolute;
-        left: 84%;
-        top: 7px;
+        left: 90%;
+        top: 25%;
 		width: 100%
     }
 	
 	#mobile-nav span {
     	display: block;
     	position: absolute;
-    	top: 9px;
+    	top: 30%;
 	}
 	
 	#main-content-area div.columns {
